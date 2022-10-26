@@ -1,0 +1,29 @@
+{
+    "name": "eqifax/credit-history",
+    "description": "Библиотека для формирования XML файлов кредитной истории БКИ Equifax",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Equifax\\CreditHistory\\": "src/"
+        }
+    },
+    "keywords": [
+        "отчёт",
+        "кредитная история",
+        "формировать",
+        "формирование",
+        "эквифакс",
+        "equifax"
+    ],
+    "authors": [
+        {
+            "name": "Алексей Зорин",
+            "email": "zorinalexey59292@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php":">=5.6"
+    }
+}
