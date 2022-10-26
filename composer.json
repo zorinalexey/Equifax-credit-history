@@ -1,5 +1,5 @@
 {
-    "name": "eqifax/credit-history",
+    "name": "equifax/credit-history",
     "description": "Библиотека для формирования XML файлов кредитной истории БКИ Equifax",
     "type": "library",
     "license": "MIT",

@@ -2,12 +2,8 @@
 
 namespace Equifax\CreditHistory;
 
-if ( ! defined('SEP')) {
-    define('SEP', DIRECTORY_SEPARATOR);
-}
-
 if ( ! defined('ROOT')) {
-    define('ROOT', dirname(dirname(__FILE__)) . SEP);
+    define('ROOT', dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
 }
 
 use Equifax\CreditHistory\ReferenceBooks\DocumentTypes;
@@ -52,6 +48,7 @@ use Equifax\CreditHistory\ReferenceBooks\SignOfAnotherEncumbranceOfTheSubjectOfP
 use Equifax\CreditHistory\ReferenceBooks\SignOfFranchise;
 use Equifax\CreditHistory\ReferenceBooks\SignOfComplianceWithTheProcedureForCompensation;
 use Equifax\CreditHistory\ReferenceBooks\TypesOfRecoverableDebts;
+use Equifax\CreditHistory\ReferenceBooks\ReasonsForStoppingTheTransferOfInformation;
 
 /**
  * Класс User
@@ -234,7 +231,17 @@ class Client
          * @var TypesOfRecoverableDebts
          */
         'typesOfRecoverableDebts' => false, # TypesOfRecoverableDebts
+        /**
+         * @var ReasonsForStoppingTheTransferOfInformation
+         */
+        'reasonsForStoppingTheTransferOfInformation' => false, # ReasonsForStoppingTheTransferOfInformation
     ];
+
+    /**
+     * Причины прекращения передачи информации
+     * @var string|null
+     */
+    public ?string $reasonsForStoppingTheTransferOfInformation = null;
 
     /**
      * Виды взыскиваемых долгов
