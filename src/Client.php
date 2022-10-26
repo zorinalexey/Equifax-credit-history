@@ -49,6 +49,12 @@ use Equifax\CreditHistory\ReferenceBooks\SignOfFranchise;
 use Equifax\CreditHistory\ReferenceBooks\SignOfComplianceWithTheProcedureForCompensation;
 use Equifax\CreditHistory\ReferenceBooks\TypesOfRecoverableDebts;
 use Equifax\CreditHistory\ReferenceBooks\ReasonsForStoppingTheTransferOfInformation;
+use Equifax\CreditHistory\ReferenceBooks\SignOfTheTransferOfTheRightsOfTheCreditorToAnotherPerson;
+use Equifax\CreditHistory\ReferenceBooks\TypesOfSources;
+use Equifax\CreditHistory\ReferenceBooks\TypesOfAcquirersOfTheRightsOfCreditorLegalEntity;
+use Equifax\CreditHistory\ReferenceBooks\TypesOfRequestsToMakeDeal;
+use Equifax\CreditHistory\ReferenceBooks\ReasonsForNotMakingDeal;
+use Equifax\CreditHistory\ReferenceBooks\LiabilityAccountingAttribute;
 
 /**
  * Класс User
@@ -235,7 +241,67 @@ class Client
          * @var ReasonsForStoppingTheTransferOfInformation
          */
         'reasonsForStoppingTheTransferOfInformation' => false, # ReasonsForStoppingTheTransferOfInformation
+        /**
+         * @var SignOfTheTransferOfTheRightsOfTheCreditorToAnotherPerson
+         */
+        'signOfTheTransferOfTheRightsOfTheCreditorToAnotherPerson' => false, #SignOfTheTransferOfTheRightsOfTheCreditorToAnotherPerson
+        /**
+         * @var TypesOfSources
+         */
+        'typesOfSources' => false, # TypesOfSources
+        /**
+         * @var TypesOfAcquirersOfTheRightsOfCreditorLegalEntity
+         */
+        'typesOfAcquirersOfTheRightsOfCreditorLegalEntity' => false, # TypesOfAcquirersOfTheRightsOfCreditorLegalEntity
+        /**
+         * @var TypesOfRequestsToMakeDeal
+         */
+        'typesOfRequestsToMakeDeal' => false, # TypesOfRequestsToMakeDeal
+        /**
+         * @var ReasonsForNotMakingDeal
+         */
+        'reasonsForNotMakingDeal' => false, # ReasonsForNotMakingDeal
+        /**
+         * @var LiabilityAccountingAttribute
+         */
+        'liabilityAccountingAttribute' => false, # LiabilityAccountingAttribute
     ];
+
+    /**
+     * Признак учета обязательства
+     * @var string|null
+     */
+    public ?string $liabilityAccountingAttribute = null;
+
+    /**
+     * Причины отказа совершить сделку
+     * @var string|null
+     */
+    public ?string $reasonsForNotMakingDeal = null;
+
+    /**
+     * Виды обращений с предложением совершить сделку
+     * @var string|null
+     */
+    public ?string $typesOfRequestsToMakeDeal = null;
+
+    /**
+     * Виды приобретателей прав кредитора - юридического лица
+     * @var string|null
+     */
+    public ?string $typesOfAcquirersOfTheRightsOfCreditorLegalEntity = null;
+
+    /**
+     * Виды источников
+     * @var string|null
+     */
+    public ?string $typesOfSources = null;
+
+    /**
+     * Признак перехода прав кредитора к другому лицу
+     * @var string|null
+     */
+    public ?string $signOfTheTransferOfTheRightsOfTheCreditorToAnotherPerson = null;
 
     /**
      * Причины прекращения передачи информации
@@ -497,7 +563,7 @@ class Client
     {
         foreach ($this as $key => $value) {
             if ($value) {
-                $className = '\Equifax\CreditHistory\ReferenceBooks\\' . ucfirst($key);
+                $className = ucfirst($key);
                 self::$historyData[$key] = $className::instance()->set($value);
             }
         }
