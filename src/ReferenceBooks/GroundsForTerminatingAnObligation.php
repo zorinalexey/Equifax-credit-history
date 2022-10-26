@@ -23,6 +23,7 @@ class GroundsForTerminatingAnObligation extends \Equifax\CreditHistory\Main\Book
      * @var type
      */
     private int $default = 1;
+
     /**
      * Коллекция возможных значений
      * @var array

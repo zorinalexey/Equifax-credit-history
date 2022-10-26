@@ -21,11 +21,8 @@ class FrequencyOfObligationPayments extends \Equifax\CreditHistory\Main\Books
      * Значение по умолчанию
      * @var type
      */
-    private int $default =
-     * Значение по умолчанию
-     * @var type
-     */
     private int $default = 99;
+
     /**
      * Коллекция возможных значений
      * @var array

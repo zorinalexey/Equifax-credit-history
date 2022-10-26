@@ -23,6 +23,7 @@ class SignOfIntentionalOrFictitiousBankruptcy extends \Equifax\CreditHistory\Mai
      * @var type
      */
     private int $default = 0;
+
     /**
      * Коллекция возможных значений
      * @var array

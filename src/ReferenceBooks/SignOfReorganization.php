@@ -23,11 +23,8 @@ class SignOfReorganization extends \Equifax\CreditHistory\Main\Books
      * @var type
      */
     private int $default = 0;
+
     /**
-     * Коллекция возможных значений
-     * @var array
-     */
-    private static array $data = [
      * Коллекция возможных значений
      * @var array
      */

@@ -23,6 +23,7 @@ class SignOfImproperPerformanceOfAnObligation extends \Equifax\CreditHistory\Mai
      * @var type
      */
     private int $default = 1;
+
     /**
      * Коллекция возможных значений
      * @var array

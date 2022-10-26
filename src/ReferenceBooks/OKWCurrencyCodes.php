@@ -25,10 +25,6 @@ class OKWCurrencyCodes extends \Equifax\CreditHistory\Main\Books
     private string $default = 'RUB';
 
     /**
-     * Коллекция возможных значений словаря
-     * @var array
-     */
-    /**
      * Коллекция возможных значений
      * @var array
      */

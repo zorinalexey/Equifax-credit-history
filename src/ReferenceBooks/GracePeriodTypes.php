@@ -23,6 +23,7 @@ class GracePeriodTypes extends \Equifax\CreditHistory\Main\Books
      * @var type
      */
     private int $default = 6;
+
     /**
      * Коллекция возможных значений
      * @var array

@@ -23,6 +23,7 @@ class SignOfExemptionFromFulfillmentOfCreditorsClaims extends \Equifax\CreditHis
      * @var type
      */
     private int $default = 0;
+
     /**
      * Коллекция возможных значений
      * @var array

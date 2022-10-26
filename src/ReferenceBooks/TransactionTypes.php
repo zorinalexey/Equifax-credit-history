@@ -23,6 +23,7 @@ class TransactionTypes extends \Equifax\CreditHistory\Main\Books
      * @var type
      */
     public $default = 1;
+
     /**
      * Коллекция возможных значений
      * @var array

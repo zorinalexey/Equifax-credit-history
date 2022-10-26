@@ -19,6 +19,7 @@ class TypesOfLoan extends \Equifax\CreditHistory\Main\Books
 {
 
     public $default = 99;
+
     /**
      * Коллекция возможных значений
      * @var array

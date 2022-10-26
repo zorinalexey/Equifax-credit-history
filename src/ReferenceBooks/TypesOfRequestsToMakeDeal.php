@@ -23,6 +23,7 @@ class TypesOfRequestsToMakeDeal extends \Equifax\CreditHistory\Main\Books
      * @var type
      */
     private int $default = 99;
+
     /**
      * Коллекция возможных значений
      * @var array

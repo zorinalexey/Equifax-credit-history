@@ -23,6 +23,7 @@ class SignOfComplianceWithTheProcedureForCompensation extends \Equifax\CreditHis
      * @var type
      */
     private int $default = 1;
+
     /**
      * Коллекция возможных значений
      * @var array

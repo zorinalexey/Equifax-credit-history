@@ -23,7 +23,12 @@ class SignOfTheSubjectsMonetaryObligation extends \Equifax\CreditHistory\Main\Bo
      * @var type
      */
     private int $default = 1;
-    private static $data = [
+
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
+    private static array $data = [
         'объектом предоставления по сделке со стороны субъекта являются деньги' => 1,
         'объектом предоставления по сделке со стороны субъекта является иное имущество (в том числе драгоценные металлы, сельскохозяйственная продукция, а также товарный кредит)' => 0
     ];
