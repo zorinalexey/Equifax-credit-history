@@ -42,7 +42,7 @@ use Equifax\CreditHistory\ReferenceBooks\TypesOfComplianceWithTheDeadlineForMaki
 use Equifax\CreditHistory\ReferenceBooks\GroundsForTerminatingAnObligation;
 use Equifax\CreditHistory\ReferenceBooks\SettlementSignForTheLastPayment;
 use Equifax\CreditHistory\ReferenceBooks\SignOfAnUnconfirmedGracePeriod;
-use ReferenceBooks\SignOfDelayOfTheDebtorMoreThan90Days;
+use Equifax\CreditHistory\ReferenceBooks\SignOfDelayOfTheDebtorMoreThan90Days;
 use Equifax\CreditHistory\ReferenceBooks\SignOfTheTerminationOfTheObligation;
 use Equifax\CreditHistory\ReferenceBooks\TypesOfCollateralAndNonMonetaryGrantsUnderTheTransaction;
 use Equifax\CreditHistory\ReferenceBooks\ReasonsForTerminatingCollateral;
@@ -50,6 +50,8 @@ use Equifax\CreditHistory\ReferenceBooks\TypesOfCollateralUsed;
 use Equifax\CreditHistory\ReferenceBooks\SignOfImproperPerformanceOfAnObligation;
 use Equifax\CreditHistory\ReferenceBooks\SignOfAnotherEncumbranceOfTheSubjectOfPledge;
 use Equifax\CreditHistory\ReferenceBooks\SignOfFranchise;
+use Equifax\CreditHistory\ReferenceBooks\SignOfComplianceWithTheProcedureForCompensation;
+use Equifax\CreditHistory\ReferenceBooks\TypesOfRecoverableDebts;
 
 /**
  * Класс User
@@ -224,7 +226,27 @@ class Client
          * @var SignOfFranchise
          */
         'signOfFranchise' => false, # SignOfFranchise
+        /**
+         * @var SignOfComplianceWithTheProcedureForCompensation
+         */
+        'signOfComplianceWithTheProcedureForCompensation' => false, # SignOfComplianceWithTheProcedureForCompensation
+        /**
+         * @var TypesOfRecoverableDebts
+         */
+        'typesOfRecoverableDebts' => false, # TypesOfRecoverableDebts
     ];
+
+    /**
+     * Виды взыскиваемых долгов
+     * @var string|null
+     */
+    public ?string $typesOfRecoverableDebts = null;
+
+    /**
+     * Признак соблюдения порядка возмещения
+     * @var string|null
+     */
+    public ?string $signOfComplianceWithTheProcedureForCompensation = null;
 
     /**
      * Признак наличия франшизы
