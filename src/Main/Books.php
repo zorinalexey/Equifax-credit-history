@@ -25,7 +25,7 @@ abstract class Books
      */
     public $name = false;
 
-    private function __construct()
+    final private function __construct()
     {
         if (isset($this->default)) {
             $this->set($this->default);
@@ -42,7 +42,7 @@ abstract class Books
      * Реализация Solid
      * @return self
      */
-    public static function instance(): self
+    final public static function instance(): self
     {
         if ( ! self::$object) {
             self::$object = new self();
@@ -79,7 +79,7 @@ abstract class Books
      * Получить все возможные значения справочника
      * @return array
      */
-    public static function getValues(): array
+    final public static function getValues(): array
     {
         return self::$data;
     }
