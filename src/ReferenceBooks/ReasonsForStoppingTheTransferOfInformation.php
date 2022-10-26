@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonsForStoppingTheTransferOfInformation
+class ReasonsForStoppingTheTransferOfInformation extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Истек срок действия договора об оказании информационных услуг' => 1,
         'Договор об оказании информационных услуг расторгнут на ином основании' => 2,

@@ -15,10 +15,8 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class DocumentTypes
+class DocumentTypes extends \Equifax\CreditHistory\Main\Books
 {
-
-    use \Equifax\CreditHistory\Main\Books;
 
     /**
      * Значение по умолчанию

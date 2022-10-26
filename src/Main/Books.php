@@ -10,10 +10,19 @@ namespace Equifax\CreditHistory\Main;
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-trait Books
+abstract class Books
 {
 
+    /**
+     * Значение кода параметра
+     * @var string|int
+     */
     public $code = false;
+
+    /**
+     * Значение параметра справочника
+     * @var type
+     */
     public $name = false;
 
     private function __construct()
@@ -66,6 +75,10 @@ trait Books
         return $this;
     }
 
+    /**
+     * Получить все возможные значения справочника
+     * @return array
+     */
     public static function getValues(): array
     {
         return self::$data;

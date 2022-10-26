@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfTheSubjectsMonetaryObligation
+class SignOfTheSubjectsMonetaryObligation extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Значение по умолчанию
+     * @var type
+     */
     private int $default = 1;
     private static $data = [
         'объектом предоставления по сделке со стороны субъекта являются деньги' => 1,

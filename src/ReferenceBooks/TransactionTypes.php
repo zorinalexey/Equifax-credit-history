@@ -15,16 +15,18 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TransactionTypes
+class TransactionTypes extends \Equifax\CreditHistory\Main\Books
 {
-
-    use \Equifax\CreditHistory\Main\Books;
 
     /**
      * Значение по умолчанию
      * @var type
      */
     public $default = 1;
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Договор займа (кредита)' => 1,
         'Договор лизинга' => 2,

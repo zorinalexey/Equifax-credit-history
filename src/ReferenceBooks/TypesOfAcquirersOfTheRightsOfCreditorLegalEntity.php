@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfAcquirersOfTheRightsOfCreditorLegalEntity
+class TypesOfAcquirersOfTheRightsOfCreditorLegalEntity extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Кредитная организация' => 1,
         'Некредитная финансовая организация' => 2,

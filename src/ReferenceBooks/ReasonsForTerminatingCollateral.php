@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonsForTerminatingCollateral
+class ReasonsForTerminatingCollateral extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Обеспечивающее обязательство прекращено в связи с надлежащим исполнением основного обязательства' => 1,
         'Обеспечивающее обязательство прекращено в счет погашения требований кредитора по основному обязательству' => 2,

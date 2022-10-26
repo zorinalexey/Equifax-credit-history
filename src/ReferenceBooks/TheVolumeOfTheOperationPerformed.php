@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TheVolumeOfTheOperationPerformed
+class TheVolumeOfTheOperationPerformed extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'изменение отдельных показателей кредитной истории' => 1,
         'исключение/аннулирование отдельных показателей кредитной истории' => 2,

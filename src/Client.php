@@ -55,6 +55,8 @@ use Equifax\CreditHistory\ReferenceBooks\TypesOfAcquirersOfTheRightsOfCreditorLe
 use Equifax\CreditHistory\ReferenceBooks\TypesOfRequestsToMakeDeal;
 use Equifax\CreditHistory\ReferenceBooks\ReasonsForNotMakingDeal;
 use Equifax\CreditHistory\ReferenceBooks\LiabilityAccountingAttribute;
+use Equifax\CreditHistory\ReferenceBooks\CodesOfCountriesAccordingToOKSM;
+use Equifax\CreditHistory\ReferenceBooks\OKWCurrencyCodes;
 
 /**
  * Класс User
@@ -264,7 +266,27 @@ class Client
          * @var LiabilityAccountingAttribute
          */
         'liabilityAccountingAttribute' => false, # LiabilityAccountingAttribute
+        /**
+         * @var CodesOfCountriesAccordingToOKSM
+         */
+        'codesOfCountriesAccordingToOKSM' => false, # CodesOfCountriesAccordingToOKSM
+        /**
+         * @var OKWCurrencyCodes
+         */
+        'oKWCurrencyCodes' => false, # OKWCurrencyCodes
     ];
+
+    /**
+     * Коды валют по ОКВ
+     * @var string|null
+     */
+    public ?string $oKWCurrencyCodes = null;
+
+    /**
+     * Коды стран по ОКСМ
+     * @var string|null
+     */
+    public ?string $codesOfCountriesAccordingToOKSM = null;
 
     /**
      * Признак учета обязательства

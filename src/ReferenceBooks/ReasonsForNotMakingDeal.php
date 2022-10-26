@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonsForNotMakingDeal
+class ReasonsForNotMakingDeal extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Кредитная политика заимодавца (кредитора)' => 1,
         'Ограничение деятельности микрофинансовой организации или кредитного кооператива, установленное законом о соответствующем виде деятельности' => 2,

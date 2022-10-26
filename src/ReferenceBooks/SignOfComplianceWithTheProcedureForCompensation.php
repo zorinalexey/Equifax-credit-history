@@ -15,12 +15,18 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfComplianceWithTheProcedureForCompensation
+class SignOfComplianceWithTheProcedureForCompensation extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Значение по умолчанию
+     * @var type
+     */
     private int $default = 1;
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'принципал надлежаще возмещает гаранту выплаченную им сумму' => 1,
         'обстоятельство кода 1 отсутствует' => 0

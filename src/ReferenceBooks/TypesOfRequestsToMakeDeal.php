@@ -15,12 +15,18 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfRequestsToMakeDeal
+class TypesOfRequestsToMakeDeal extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Значение по умолчанию
+     * @var type
+     */
     private int $default = 99;
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Посреднический - оформление через агента источника' => 1,
         'Дистанционный - оформление с использованием средств телекоммуникаций' => 2,

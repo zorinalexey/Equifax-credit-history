@@ -15,11 +15,13 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfCollateralAndNonMonetaryGrantsUnderTheTransaction
+class TypesOfCollateralAndNonMonetaryGrantsUnderTheTransaction extends \Equifax\CreditHistory\Main\Books
 {
 
-    use \Equifax\CreditHistory\Main\Books;
-
+    /**
+     * Коллекция возможных значений
+     * @var array
+     */
     private static array $data = [
         'Недвижимость, за исключением судов и космических объектов' => 1,
         'Здание' => 1.1,
