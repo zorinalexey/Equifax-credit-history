@@ -6,6 +6,10 @@ if ( ! defined('ROOT')) {
     exit();
 }
 
+use \Equifax\CreditHistory\Client;
+use \Equifax\CreditHistory\Source;
+use \Equifax\CreditHistory\XmlGenerator\Xml\Xml;
+
 /**
  * Класс Generator
  * @version 0.0.1
@@ -17,17 +21,16 @@ if ( ! defined('ROOT')) {
 class Generator
 {
 
-    private static array $data = [];
+    private Xml $data;
 
-    public function __construct(array $data)
+    public function __construct(Source $source, Client $client)
     {
-        self::$data = $data;
+        $this->data = new Xml($source, $client);
     }
 
-    public function get()
+    public function get(string $dir = ROOT . 'files')
     {
-        $obj = new \Equifax\CreditHistory\XmlGenerator\Xml\Xml();
-        return $obj->get();
+        return $this->data->get($dir);
     }
 
 }
