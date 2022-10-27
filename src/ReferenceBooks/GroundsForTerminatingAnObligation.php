@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class GroundsForTerminatingAnObligation extends \Equifax\CreditHistory\Main\Books
+class GroundsForTerminatingAnObligation 
 {
 
     /**
@@ -28,7 +28,7 @@ class GroundsForTerminatingAnObligation extends \Equifax\CreditHistory\Main\Book
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Надлежащее исполнение обязательства' => 1,
         'Принудительное исполнение обязательства' => 2,
         'По соглашению сторон' => 3,

@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfRecoverableDebts extends \Equifax\CreditHistory\Main\Books
+class TypesOfRecoverableDebts 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Алименты' => 1,
         'Плата за жилое помещение' => 2,
         'Плата за коммунальные услуги' => 3,

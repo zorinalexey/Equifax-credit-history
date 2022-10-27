@@ -8,8 +8,10 @@ if ( ! defined('ROOT')) {
 
 use \XMLWriter;
 use \Equifax\CreditHistory\Source;
-use \Equifax\CreditHistory\Client;
+use \Equifax\CreditHistory\ClientInterface;
 use \Equifax\CreditHistory\Individual;
+use \Equifax\CreditHistory\XmlGenerator\Xml\Traits\IndividualGenerator;
+use \Equifax\CreditHistory\XmlGenerator\Xml\Traits\EntityGenerator;
 
 /**
  * Класс Xml
@@ -21,6 +23,9 @@ use \Equifax\CreditHistory\Individual;
  */
 class Xml
 {
+
+    use IndividualGenerator;
+    use EntityGenerator;
 
     const dateFormat = 'd.m.Y';
 
@@ -36,7 +41,7 @@ class Xml
      */
     private ?Source $source;
 
-    public function __construct(Source $source, Client $client)
+    public function __construct(Source $source, ClientInterface $client)
     {
         $this->source = $source;
         self::$xml = new XMLWriter();
@@ -44,10 +49,9 @@ class Xml
         self::$xml->startDocument('1.0', 'utf-8');
         $this->startElement('fch', ['version' => '4.0']);
         $this->addSource($source);
-
+        $this->closeElement();
         $this->startElement('info');
         $this->addClientInfo($client);
-        $this->closeElement();
         $this->closeElement();
     }
 
@@ -179,7 +183,7 @@ class Xml
         return $this;
     }
 
-    private function addClientInfo(Client $client)
+    private function addClientInfo(ClientInterface $client)
     {
         $this->startElement($client->type);
         if ($client instanceof Individual) {
@@ -188,20 +192,6 @@ class Xml
             $this->setEntityClientInfo($client);
         }
         $this->closeElement();
-    }
-
-    private function setIndividualClientInfo(Individual $client)
-    {
-        $this->startElement('name')
-            ->addElement('last', $client->last)
-            ->addElement('first', $client->first)
-            ->addElement('middle', $client->middle)
-            ->closeElement();
-    }
-
-    private function setEntityClientInfo(Entity $client)
-    {
-
     }
 
 }

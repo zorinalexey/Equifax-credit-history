@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfComplianceWithTheDeadlineForMakingPayments extends \Equifax\CreditHistory\Main\Books
+class TypesOfComplianceWithTheDeadlineForMakingPayments 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Срок внесения платежа не наступил (новый договор)' => 1,
         'Новый договор' => 1,
         'Платежи вносятся своевременно' => 2,

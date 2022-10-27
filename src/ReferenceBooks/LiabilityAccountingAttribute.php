@@ -14,7 +14,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class LiabilityAccountingAttribute extends \Equifax\CreditHistory\Main\Books
+class LiabilityAccountingAttribute 
 {
 
     /**
@@ -27,7 +27,7 @@ class LiabilityAccountingAttribute extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'обязательство учтено у источника на балансовых счетах' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

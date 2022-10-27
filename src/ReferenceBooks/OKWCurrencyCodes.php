@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич.
  */
-class OKWCurrencyCodes extends \Equifax\CreditHistory\Main\Books
+class OKWCurrencyCodes 
 {
 
     /**
@@ -28,7 +28,7 @@ class OKWCurrencyCodes extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Лек' => [
             'code' => 'ALL',
             'countries' => [

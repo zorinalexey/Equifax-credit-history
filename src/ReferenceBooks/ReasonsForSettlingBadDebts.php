@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonsForSettlingBadDebts extends \Equifax\CreditHistory\Main\Books
+class ReasonsForSettlingBadDebts 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Безработный' => 1,
         'Инвалидность I группы' => 2,
         'Инвалидность II группы' => 3,

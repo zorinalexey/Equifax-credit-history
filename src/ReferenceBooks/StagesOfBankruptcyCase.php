@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class StagesOfBankruptcyCase extends \Equifax\CreditHistory\Main\Books
+class StagesOfBankruptcyCase 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Заявление о признании банкротом принято судом к производству' => 1,
         'Реструктуризация долгов' => 2,
         'Реализация имущества' => 3,

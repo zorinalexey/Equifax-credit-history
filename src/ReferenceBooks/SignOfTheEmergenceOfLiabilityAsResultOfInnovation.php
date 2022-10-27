@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfTheEmergenceOfLiabilityAsResultOfInnovation extends \Equifax\CreditHistory\Main\Books
+class SignOfTheEmergenceOfLiabilityAsResultOfInnovation 
 {
 
     /**
@@ -28,7 +28,7 @@ class SignOfTheEmergenceOfLiabilityAsResultOfInnovation extends \Equifax\CreditH
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'обязательство возникло на основании соглашения о новации' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

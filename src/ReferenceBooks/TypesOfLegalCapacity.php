@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfLegalCapacity extends \Equifax\CreditHistory\Main\Books
+class TypesOfLegalCapacity 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Гражданин полностью дееспособен (в том числе если несовершеннолетний гражданин эмансипирован или вступил в брак)' => 1,
         'дееспособен' => 1,
         'Гражданин не полностью дееспособен в силу закона, в том числе в связи с несовершеннолетием' => 2,

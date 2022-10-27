@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfPaymentCompliance extends \Equifax\CreditHistory\Main\Books
+class TypesOfPaymentCompliance 
 {
 
     /**
@@ -28,7 +28,7 @@ class TypesOfPaymentCompliance extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Платеж внесен в полном размере' => 1,
         'Платеж внесен не в полном размере' => 2,
         'Платеж не внесен' => 3

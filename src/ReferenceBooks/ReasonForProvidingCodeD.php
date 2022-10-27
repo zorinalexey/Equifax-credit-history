@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonForProvidingCodeD extends \Equifax\CreditHistory\Main\Books
+class ReasonForProvidingCodeD 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'На основании пункта 2 части 1 статьи 7 218-ФЗ: на основании решения суда, вступившего в силу' => 2,
         'На основании пункта 2 части 1 статьи 7 218-ФЗ' => 2,
         'на основании решения суда, вступившего в силу' => 2,

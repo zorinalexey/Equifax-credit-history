@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class OperationCodeCreditHistory extends \Equifax\CreditHistory\Main\Books
+class OperationCodeCreditHistory 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'источник направляет кредитную историю о субъекте или его отдельном обязательстве впервые' => 'A',
         'первичная' => 'A',
         'первичный' => 'A',

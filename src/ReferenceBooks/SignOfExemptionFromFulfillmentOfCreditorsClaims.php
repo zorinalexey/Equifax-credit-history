@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfExemptionFromFulfillmentOfCreditorsClaims extends \Equifax\CreditHistory\Main\Books
+class SignOfExemptionFromFulfillmentOfCreditorsClaims 
 {
 
     /**
@@ -28,7 +28,7 @@ class SignOfExemptionFromFulfillmentOfCreditorsClaims extends \Equifax\CreditHis
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'гражданин освобожден от исполнения требований кредиторов' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

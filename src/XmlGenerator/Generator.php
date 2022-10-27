@@ -6,7 +6,7 @@ if ( ! defined('ROOT')) {
     exit();
 }
 
-use \Equifax\CreditHistory\Client;
+use \Equifax\CreditHistory\ClientInterface;
 use \Equifax\CreditHistory\Source;
 use \Equifax\CreditHistory\XmlGenerator\Xml\Xml;
 
@@ -23,7 +23,7 @@ class Generator
 
     private Xml $data;
 
-    public function __construct(Source $source, Client $client)
+    public function __construct(Source $source, ClientInterface $client)
     {
         $this->data = new Xml($source, $client);
     }

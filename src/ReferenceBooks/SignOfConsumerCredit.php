@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfConsumerCredit extends \Equifax\CreditHistory\Main\Books
+class SignOfConsumerCredit 
 {
 
     /**
@@ -28,7 +28,7 @@ class SignOfConsumerCredit extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'договор займа (кредита) заключен в соответствии с Федеральным законом от 21 декабря 2013 года N 353-ФЗ "О потребительском кредите (займе)" (Собрание законодательства Российской Федерации, 2013, N 51, ст. 6673; 2020, N 14, ст. 2036)' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

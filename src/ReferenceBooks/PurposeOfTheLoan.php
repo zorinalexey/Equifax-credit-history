@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class PurposeOfTheLoan extends \Equifax\CreditHistory\Main\Books
+class PurposeOfTheLoan 
 {
 
     /**
@@ -28,7 +28,7 @@ class PurposeOfTheLoan extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Пополнение оборотных средств' => 1,
         'Приобретение земельного участка' => 2.1,
         'Приобретение жилого здания' => 2.2,

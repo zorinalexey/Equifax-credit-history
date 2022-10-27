@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfAnotherEncumbranceOfTheSubjectOfPledge extends \Equifax\CreditHistory\Main\Books
+class SignOfAnotherEncumbranceOfTheSubjectOfPledge 
 {
 
     /**
@@ -28,7 +28,7 @@ class SignOfAnotherEncumbranceOfTheSubjectOfPledge extends \Equifax\CreditHistor
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'имеется иное обременение предмета залога' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

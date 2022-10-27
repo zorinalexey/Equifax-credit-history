@@ -14,7 +14,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич.
  */
-class Entity implements Client
+class Entity implements ClientInterface
 {
 
     public string $type = 'commercial';

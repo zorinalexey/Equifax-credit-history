@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfTaxpayerNumbers extends \Equifax\CreditHistory\Main\Books
+class TypesOfTaxpayerNumbers 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Идентификационный номер налогоплательщика, присвоенный налоговым органом Российской Федерации' => 1,
         'ИНН, присвоенный налоговым органом Российской Федерации' => 1,
         'ИНН, присвоенный налоговым органом РФ' => 1,

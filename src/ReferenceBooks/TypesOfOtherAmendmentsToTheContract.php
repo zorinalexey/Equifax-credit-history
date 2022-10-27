@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfOtherAmendmentsToTheContract extends \Equifax\CreditHistory\Main\Books
+class TypesOfOtherAmendmentsToTheContract 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Изменение валюты договора' => 1,
         'Увеличение расходного лимита' => 2,
         'Уменьшение расходного лимита' => 3,

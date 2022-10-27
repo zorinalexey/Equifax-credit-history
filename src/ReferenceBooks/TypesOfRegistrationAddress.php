@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfRegistrationAddress extends \Equifax\CreditHistory\Main\Books
+class TypesOfRegistrationAddress 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'В документе указан адрес регистрации по месту жительства' => 1,
         'адрес регистрации по месту жительства' => 1,
         'по месту жительства' => 1,

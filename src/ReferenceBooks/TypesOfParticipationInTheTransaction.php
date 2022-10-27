@@ -14,14 +14,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfParticipationInTheTransaction extends \Equifax\CreditHistory\Main\Books
+class TypesOfParticipationInTheTransaction 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Заемщик' => 1,
         'Поручитель' => 2,
         'Принципал по гарантии' => 3,

@@ -14,14 +14,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfSources extends \Equifax\CreditHistory\Main\Books
+class TypesOfSources 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Заимодавец (кредитор) - кредитная организация' => 1,
         'Заимодавец - микрофинансовая организация' => 2,
         'Заимодавец - кредитный потребительский кооператив' => 3,

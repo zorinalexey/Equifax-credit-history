@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич.
  */
-class CodesOfCountriesAccordingToOKSM extends \Equifax\CreditHistory\Main\Books
+class CodesOfCountriesAccordingToOKSM
 {
 
     /**
@@ -28,7 +28,7 @@ class CodesOfCountriesAccordingToOKSM extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'АБХАЗИЯ' => 895,
         'АВСТРАЛИЯ' => '036',
         'АВСТРИЯ' => '040',
@@ -284,5 +284,16 @@ class CodesOfCountriesAccordingToOKSM extends \Equifax\CreditHistory\Main\Books
         'ЯПОНИЯ' => 392,
         'Иная страна' => 999
     ];
+
+    public function set(string $country = 'РОССИЯ')
+    {
+        foreach (self::$data as $name => $code) {
+            if (mb_strtolower($country) === mb_strtolower($name)) {
+                $this->code = $code;
+                $this->name = $name;
+            }
+        }
+        return $this;
+    }
 
 }

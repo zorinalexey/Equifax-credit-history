@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfTheTerminationOfTheObligation extends \Equifax\CreditHistory\Main\Books
+class SignOfTheTerminationOfTheObligation 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'взаимные обязательства субъекта и источника прекращены (независимо от основания)' => 1,
         'обязательство субъекта прекратилось' => 1,
         'обстоятельство кода 1 отсутствует' => 0

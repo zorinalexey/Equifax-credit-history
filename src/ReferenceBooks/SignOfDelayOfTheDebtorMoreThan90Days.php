@@ -15,7 +15,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class SignOfDelayOfTheDebtorMoreThan90Days extends \Equifax\CreditHistory\Main\Books
+class SignOfDelayOfTheDebtorMoreThan90Days 
 {
 
     /**
@@ -28,7 +28,7 @@ class SignOfDelayOfTheDebtorMoreThan90Days extends \Equifax\CreditHistory\Main\B
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'должник нарушил срок платежа по займу или лизингу более чем на 90 календарных дней' => 1,
         'обстоятельство кода 1 отсутствует' => 0
     ];

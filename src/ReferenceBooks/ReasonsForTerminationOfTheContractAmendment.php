@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class ReasonsForTerminationOfTheContractAmendment extends \Equifax\CreditHistory\Main\Books
+class ReasonsForTerminationOfTheContractAmendment 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'По соглашению сторон' => 1,
         'В связи с истечением срока действия изменения договора' => 2,
         'В связи с наступлением условия прекращения действия изменения договора' => 3,

@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfAmendmentOfTheContract extends \Equifax\CreditHistory\Main\Books
+class TypesOfAmendmentOfTheContract 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Льготный период - изменение договора в связи с существенным изменением обстоятельств или по законному требованию заемщика' => 1,
         'Урегулирование проблемной задолженности' => 2,
         'Прочие изменения' => 3

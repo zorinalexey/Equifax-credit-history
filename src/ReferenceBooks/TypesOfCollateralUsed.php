@@ -15,14 +15,14 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class TypesOfCollateralUsed extends \Equifax\CreditHistory\Main\Books
+class TypesOfCollateralUsed 
 {
 
     /**
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Залог' => 1,
         'Поручительство' => 2,
         'Независимая гарантия' => 3,

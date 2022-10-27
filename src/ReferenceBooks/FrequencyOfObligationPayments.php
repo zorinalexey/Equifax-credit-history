@@ -14,7 +14,7 @@ if ( ! defined('ROOT')) {
  * @author Зорин Алексей <zorinalexey59292@gmail.com>
  * @copyright 2022 разработчик Зорин Алексей Евгеньевич. Все права защищены.
  */
-class FrequencyOfObligationPayments extends \Equifax\CreditHistory\Main\Books
+class FrequencyOfObligationPayments 
 {
 
     /**
@@ -27,7 +27,7 @@ class FrequencyOfObligationPayments extends \Equifax\CreditHistory\Main\Books
      * Коллекция возможных значений
      * @var array
      */
-    private static array $data = [
+    public static array $data = [
         'Более четырех раз в месяц' => 1,
         'От двух до четырех раз в месяц' => 2,
         'Один раз в месяц' => 3,
