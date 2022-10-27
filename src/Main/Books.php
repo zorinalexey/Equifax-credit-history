@@ -58,12 +58,7 @@ abstract class Books
     public function set($str): self
     {
         foreach (self::$data as $name => $code) {
-            if (mb_strtolower($str) === mb_strtolower($name)) {
-                $this->code = $code;
-                $this->name = $name;
-                return $this;
-            }
-            if ($str === $code) {
+            if (mb_strtolower($str) === mb_strtolower($name) OR $str === $code) {
                 $this->code = $code;
                 $this->name = $name;
                 return $this;

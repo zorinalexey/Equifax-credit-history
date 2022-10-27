@@ -26,7 +26,8 @@ class Generator
 
     public function get()
     {
-        return self::$data;
+        $obj = new \Equifax\CreditHistory\XmlGenerator\Xml\Xml();
+        return $obj->get();
     }
 
 }

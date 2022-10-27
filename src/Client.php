@@ -584,8 +584,8 @@ class Client
     {
         foreach ($this as $key => $value) {
             if ($value) {
-                $className = ucfirst($key);
-                self::$historyData[$key] = $className::instance()->set($value);
+                $className = '\Equifax\CreditHistory\ReferenceBooks\\' . ucfirst($key);
+                #self::$historyData[$key] = $className::instance()->set($value);
             }
         }
         $xmlData = new XmlGenerator\Generator(self::$historyData);

@@ -2,3 +2,4 @@ composer.phar
 index.php
 composer.lock
 vendor/**
+files/**
